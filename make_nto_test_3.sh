@@ -3,6 +3,7 @@
 #NTOs calculation script from the TDDFT chk file and a list state file name nto_states 
 #Scrip Revised by Mohammed A Jabed, NDSU 
 ##script revised by Sean Ferrell sferr092@fiu.edu, improved speed so as to run ~2-4x faster, removed redundancy.
+##to estimate time to run a decent approximate is 7.6*10^-5 *(n^2) = hours, where n is the number of atoms.
 
 
 file=$(rev <<< "$1" | cut -d"." -f2- | rev)
